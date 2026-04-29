@@ -1,13 +1,13 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
+import { base44 } from '../api/base44Client';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Users, Package, Timer, Maximize2, Sparkles, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import FilterCard from '@/components/home/FilterCard';
-import DrillPreview from '@/components/home/DrillPreview';
-import usePullToRefresh from '@/hooks/usePullToRefresh';
+import { Button } from '../components/ui/button';
+import FilterCard from '../components/home/FilterCard';
+import DrillPreview from '../components/home/DrillPreview';
+import usePullToRefresh from '../hooks/usePullToRefresh';
 
 // Space hierarchy — larger values include smaller spaces
 const spaceOrder = { bedroom: 0, less_than_quarter_pitch: 1, quarter_pitch: 2, half_pitch: 3, three_quarter_pitch: 4, full_pitch: 5 };
